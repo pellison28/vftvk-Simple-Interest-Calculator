@@ -1,16 +1,26 @@
-<html>
+<!DOCTYPE html>
+<title>Simple interest calculator</title>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.5">  <br/>
+        No. of Years <input type="number" select id="years"><option value="1">1</option><!-- fill in the rest of the values-->
+    </select>
+        <br/>
+        Interest : <span id="resultrate_val"
+        10.25%
+        ></span><br>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result">
+        </span>
+        <footer>
+            &#169; This calculator belongs to --Paula Ellison--
+        </footer>
+    </div>
 </html>
